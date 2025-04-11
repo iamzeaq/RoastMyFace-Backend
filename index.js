@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const upload = multer({ dest: "uploads/" });
+const upload = multer({ storage: multer.memoryStorage() });
 
 const generateRoasts = (filename, style = "default") => {
   const defaultRoasts = [
@@ -77,9 +77,7 @@ app.post("/api/roast", upload.single("image"), (req, res) => {
 
     if (!imageFile) return res.status(400).json({ error: "No image uploaded" });
 
-    const roasts = generateRoasts(imageFile.filename, style);
-
-    fs.unlink(path.join(__dirname, imageFile.path), () => {});
+    const roasts = generateRoasts(imageFile.originalname, style);
 
     res.json({ roasts });
   } catch (err) {
