@@ -76,11 +76,11 @@ const makeApiRequest = async (prompt, retries = 3, delay = 1000) => {
   }
 };
 
-const generateRoasts = async (style = "default") => {
+const generateRoast = async (style = "default", customPrompt = "") => {
   if (!HF_API_KEY) {
     console.warn("No Hugging Face API key provided, falling back to roasts.json");
     const lines = roastData[style] || roastData["default"] || ["Your face broke the AI, congrats."];
-    return lines.sort(() => 0.5 - Math.random()).slice(0, 1);
+    return lines.sort(() => 0.5 - Math.random())[0];
   }
 
   try {
@@ -88,7 +88,12 @@ const generateRoasts = async (style = "default") => {
     const timestamp = Date.now();
 
     let prompt;
-    if (style.toLowerCase() === "pidgin") {
+    if (customPrompt) {
+      // Use the custom prompt from the pack
+      prompt = `<s>[INST] You are a funny roast generator (seed: ${uniqueSeed}, time: ${timestamp}). 
+      ${customPrompt} Make it witty, under 15 words, and end with punctuation. 
+      Only return the roast, nothing else. [/INST]`;
+    } else if (style.toLowerCase() === "pidgin") {
       prompt = `<s>[INST] You are a funny roast generator (seed: ${uniqueSeed}, time: ${timestamp}). Write exactly one funny, brief roast in Nigerian Pidgin about someone's appearance. Make it witty, under 15 words, and end with punctuation. Only return the roast, nothing else. [/INST]`;
     } else if (style.toLowerCase() === "patois") {
       prompt = `<s>[INST] You are a funny roast generator (seed: ${uniqueSeed}, time: ${timestamp}). Write exactly one funny, brief roast in Jamaican Patois about someone's appearance. Make it witty, under 15 words, and end with punctuation. Only return the roast, nothing else. [/INST]`;
@@ -125,7 +130,7 @@ const generateRoasts = async (style = "default") => {
       }
 
       if (roast.length > 3) {
-        return [roast];
+        return roast;
       }
     }
 
@@ -139,10 +144,11 @@ const generateRoasts = async (style = "default") => {
     );
 
     const lines = roastData[style] || roastData["default"] || ["Your selfie has achieved what no filter could - made me speechless."];
-    return lines.sort(() => 0.5 - Math.random()).slice(0, 1);
+    return lines.sort(() => 0.5 - Math.random())[0];
   }
 };
 
+// Original roast endpoint
 app.post("/api/roast", upload.single("image"), async (req, res) => {
   try {
     const imageFile = req.file;
@@ -152,11 +158,11 @@ app.post("/api/roast", upload.single("image"), async (req, res) => {
       return res.status(400).json({ error: "No image uploaded" });
     }
 
-    const roasts = await generateRoasts(style);
+    const roast = await generateRoast(style);
 
-    // Validate that we actually have roasts to return
-    if (!roasts || !roasts.length || !roasts[0] || typeof roasts[0] !== 'string') {
-      console.error("No valid roasts generated, using emergency fallback");
+    // Validate that we actually have a roast to return
+    if (!roast || typeof roast !== 'string') {
+      console.error("No valid roast generated, using emergency fallback");
 
       // Emergency fallback based on style
       let emergencyRoast;
@@ -171,7 +177,7 @@ app.post("/api/roast", upload.single("image"), async (req, res) => {
       return res.json({ roasts: [emergencyRoast] });
     }
 
-    res.json({ roasts });
+    res.json({ roasts: [roast] });
   } catch (err) {
     console.error("Roast endpoint error:", err.message);
     // Send a witty error message instead of exposing the internal error
@@ -181,9 +187,47 @@ app.post("/api/roast", upload.single("image"), async (req, res) => {
   }
 });
 
+// New MemeMyFace endpoint for multiple images
+app.post("/api/mememyface", upload.array("images"), async (req, res) => {
+  try {
+    const imageFiles = req.files;
+    const style = req.body.style || "default";
+    const prompt = req.body.prompt || "";
+
+    if (!imageFiles || imageFiles.length === 0) {
+      return res.status(400).json({ error: "No images uploaded" });
+    }
+
+    console.log(`Processing ${imageFiles.length} images with prompt: "${prompt}"`);
+
+    // Generate individual roasts for each image
+    const roastsPromises = imageFiles.map(async (_, index) => {
+      // Generate a customized prompt for this specific image based on the pack prompt
+      const imagePrompt = `Based on this prompt: "${prompt}" - write a funny roast for a person in an image.`;
+      const roast = await generateRoast(style, imagePrompt);
+      
+      return {
+        imageIndex: index,
+        roast: roast
+      };
+    });
+
+    const roasts = await Promise.all(roastsPromises);
+
+    res.json({ roasts });
+  } catch (err) {
+    console.error("MemeMyFace endpoint error:", err.message);
+    res.status(500).json({
+      error: "An error occurred while processing your request",
+      roasts: []
+    });
+  }
+});
+
 app.get("/", (req, res) => {
   res.send("RoastMyFace API is running");
 });
 
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 module.exports = app;
