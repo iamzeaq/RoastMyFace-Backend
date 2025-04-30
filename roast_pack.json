@@ -1,0 +1,633 @@
+[
+  {
+    "pack_id": 1,
+    "pack_name": "African Meme Legends",
+    "description": "A themed roast pack focused on African Meme Legends.",
+    "languages": {
+      "English": {
+        "tones": {
+          "funny": {
+            "categories": {
+              "looks": [
+                "Your face looks like it was designed by a meme generator on low battery.",
+                "Your hairstyle is giving 'I argued with the barber and lost' vibes.",
+                "Your selfie could make a TikTok filter retire in shame."
+              ],
+              "behavior": [
+                "You move like you're auditioning for the next viral dance fail.",
+                "Your vibes scream 'I reply to DMs with memes only'.",
+                "You act like the main character in a Twitter thread nobody asked for."
+              ],
+              "career": [
+                "Your hustle looks like a side quest nobody picked up.",
+                "Your LinkedIn profile is just memes and zero endorsements.",
+                "Your career path is twistier than a Nollywood plot."
+              ],
+              "future": [
+                "Your future's so bright, it needs a meme to explain it.",
+                "You'll probably go viral for something totally unplanned.",
+                "Your destiny looks like a meme that trends for a day."
+              ],
+              "intelligence": [
+                "Your brain's working hard, but it’s still on dial-up speed.",
+                "You’re smart, but your ideas sound like recycled memes.",
+                "Your IQ test results would make a great reaction GIF."
+              ],
+              "lifestyle": [
+                "Your lifestyle’s so extra, it needs its own Instagram reel.",
+                "You live like every day’s a meme-worthy adventure.",
+                "Your vibe’s so loud, it’s got its own hashtag."
+              ]
+            }
+          },
+          "dark": {
+            "categories": {
+              "looks": [
+                "Your face could crash a meme app with one glance.",
+                "Your style’s so grim, it scares off TikTok trends.",
+                "Your selfie looks like it belongs in a horror meme thread."
+              ],
+              "behavior": [
+                "You lurk online like a bot with no chill.",
+                "Your energy’s so dark, it blocks Twitter’s algorithm.",
+                "You act like you’re scripted for a meme apocalypse."
+              ],
+              "career": [
+                "Your job’s so dead, it’s a meme nobody shares.",
+                "Your hustle’s buried deeper than a deleted tweet.",
+                "Your career’s a meme that never made it past drafts."
+              ],
+              "future": [
+                "Your future’s darker than a meme with no likes.",
+                "You’re headed for a viral flop, no retweets.",
+                "Your destiny’s a meme that gets reported for shade."
+              ],
+              "intelligence": [
+                "Your brain’s a meme that nobody gets.",
+                "Your thoughts are stuck in a 404 error loop.",
+                "Your smarts could spark a meme, but it’d flop."
+              ],
+              "lifestyle": [
+                "Your life’s a meme that’s too grim to trend.",
+                "You live like you’re stuck in a dark web thread.",
+                "Your vibe’s a meme that gets shadowbanned."
+              ]
+            }
+          },
+          "petty": {
+            "categories": {
+              "looks": [
+                "Your outfit’s so last season, even memes moved on.",
+                "Your filter game’s weaker than a low-effort meme.",
+                "Your face is giving 'I tried, but not really' energy."
+              ],
+              "behavior": [
+                "You shade people like it’s your side hustle.",
+                "Your clapbacks are pettier than a meme war.",
+                "You’re out here acting unwise for the likes."
+              ],
+              "career": [
+                "Your job’s so basic, it’s not even meme-worthy.",
+                "Your hustle’s pettier than a subtweet.",
+                "Your career’s stuck in a meme nobody tagged."
+              ],
+              "future": [
+                "Your future’s petty enough for a Twitter feud.",
+                "You’ll probably go viral for throwing shade.",
+                "Your destiny’s a meme that starts petty drama."
+              ],
+              "intelligence": [
+                "Your brain’s petty enough to start a meme beef.",
+                "Your ideas are shadier than a viral subtweet.",
+                "Your smarts are lowkey, like a meme nobody sees."
+              ],
+              "lifestyle": [
+                "Your life’s petty enough for a meme thread.",
+                "You live like you’re shading someone 24/7.",
+                "Your vibe’s a meme that’s all tea, no chill."
+              ]
+            }
+          },
+          "toxic": {
+            "categories": {
+              "looks": [
+                "Your face is so toxic, it needs a content warning.",
+                "Your style’s a hazard, even to meme creators.",
+                "Your selfie could poison a trending hashtag."
+              ],
+              "behavior": [
+                "Your energy’s so toxic, it crashes group chats.",
+                "You’re out here spreading drama like a bad meme.",
+                "Your vibes are venomous, even for Twitter."
+              ],
+              "career": [
+                "Your hustle’s so toxic, it scares off collabs.",
+                "Your job’s a meme that nobody wants to share.",
+                "Your career’s a virus that kills opportunities."
+              ],
+              "future": [
+                "Your future’s toxic enough to cancel itself.",
+                "You’re destined for a meme that tanks hard.",
+                "Your path’s a hashtag that gets muted."
+              ],
+              "intelligence": [
+                "Your brain’s a toxic meme nobody asked for.",
+                "Your ideas are pure chaos, no retweets.",
+                "Your smarts are a virus in the meme game."
+              ],
+              "lifestyle": [
+                "Your life’s a toxic meme that nobody likes.",
+                "You live like you’re banned from every platform.",
+                "Your vibe’s a meme that gets reported daily."
+              ]
+            }
+          },
+          "savage": {
+            "categories": {
+              "looks": [
+                "Your face is a meme that flops before it trends.",
+                "Your style’s so bad, it’s banned from TikTok.",
+                "Your selfie’s a savage roast all by itself."
+              ],
+              "behavior": [
+                "You move like a meme that nobody asked for.",
+                "Your energy’s so savage, it scares influencers.",
+                "You act like you own the internet’s shade."
+              ],
+              "career": [
+                "Your hustle’s a meme that never went viral.",
+                "Your job’s so dead, it’s a savage roast.",
+                "Your career’s a flop bigger than a bad collab."
+              ],
+              "future": [
+                "Your future’s a savage meme with zero likes.",
+                "You’re headed for a viral fail, no recovery.",
+                "Your destiny’s a roast that trends for shade."
+              ],
+              "intelligence": [
+                "Your brain’s a savage meme that nobody gets.",
+                "Your ideas are roasted harder than your selfies.",
+                "Your smarts are a flop in the meme game."
+              ],
+              "lifestyle": [
+                "Your life’s a savage meme that nobody shares.",
+                "You live like you’re the king of shade.",
+                "Your vibe’s a roast that burns every platform."
+              ]
+            }
+          },
+          "light": {
+            "categories": {
+              "looks": [
+                "Your face is a meme that’s almost too cute.",
+                "Your style’s so chill, it’s a lighthearted trend.",
+                "Your selfie’s got that soft meme glow."
+              ],
+              "behavior": [
+                "You vibe like a meme that everyone loves.",
+                "Your energy’s so light, it lifts the timeline.",
+                "You act like a wholesome meme star."
+              ],
+              "career": [
+                "Your hustle’s a meme that’s quietly winning.",
+                "Your job’s so cool, it’s a light vibe.",
+                "Your career’s a trend that’s here to stay."
+              ],
+              "future": [
+                "Your future’s a meme that everyone likes.",
+                "You’re headed for a wholesome viral hit.",
+                "Your destiny’s a lighthearted hashtag."
+              ],
+              "intelligence": [
+                "Your brain’s a meme that’s secretly brilliant.",
+                "Your ideas are light but always on point.",
+                "Your smarts shine like a wholesome meme."
+              ],
+              "lifestyle": [
+                "Your life’s a meme that’s pure good vibes.",
+                "You live like a lighthearted TikTok star.",
+                "Your vibe’s a trend that everyone loves."
+              ]
+            }
+          }
+        }
+      },
+      "Pidgin": {
+        "tones": {
+          "funny": {
+            "categories": {
+              "looks": [
+                "Your face be like meme wey dem edit with Paint.",
+                "Your hair dey shout 'I no gree for barber' loud.",
+                "Your selfie fit make Instagram crash with laugh."
+              ],
+              "behavior": [
+                "You dey waka like say you wan form viral video.",
+                "Your vibe be like say you dey reply with emoji only.",
+                "You dey act like Twitter thread wey nobody send."
+              ],
+              "career": [
+                "Your hustle be like meme wey no blow.",
+                "Your LinkedIn na just vibes and zero connect.",
+                "Your career path bend pass Nollywood story."
+              ],
+              "future": [
+                "Your future bright, but e need meme to explain.",
+                "You fit blow for something wey you no plan.",
+                "Your destiny be like meme wey trend one day."
+              ],
+              "intelligence": [
+                "Your brain dey try, but e still dey on 2G.",
+                "Your idea be like meme wey dem don see before.",
+                "Your IQ test fit turn to reaction GIF."
+              ],
+              "lifestyle": [
+                "Your lifestyle loud pass Instagram skit.",
+                "You dey live like every day na meme challenge.",
+                "Your vibe get hashtag wey dey trend."
+              ]
+            }
+          },
+          "dark": {
+            "categories": {
+              "looks": [
+                "Your face fit make meme app hang one time.",
+                "Your style dark pass TikTok blackout challenge.",
+                "Your selfie be like horror meme for WhatsApp."
+              ],
+              "behavior": [
+                "You dey lurk online like bot wey no dey sleep.",
+                "Your energy dark pass Twitter blocklist.",
+                "You dey act like meme for end of world."
+              ],
+              "career": [
+                "Your work dead pass meme wey nobody share.",
+                "Your hustle bury deep pass deleted status.",
+                "Your career na meme wey no reach timeline."
+              ],
+              "future": [
+                "Your future dark pass meme wey no get like.",
+                "You dey go viral for wrong thing, no RT.",
+                "Your destiny na meme wey dem report."
+              ],
+              "intelligence": [
+                "Your brain na meme wey nobody understand.",
+                "Your thought dey hang like website wey crash.",
+                "Your smart fit spark meme, but e go flop."
+              ],
+              "lifestyle": [
+                "Your life na meme wey too dark to blow.",
+                "You dey live like say you dey dark web.",
+                "Your vibe na meme wey dem block."
+              ]
+            }
+          },
+          "petty": {
+            "categories": {
+              "looks": [
+                "Your cloth old pass meme wey don expire.",
+                "Your filter weak pass low-budget skit.",
+                "Your face dey do 'I no try' vibes."
+              ],
+              "behavior": [
+                "You dey throw shade like say na your work.",
+                "Your reply petty pass meme comment section.",
+                "You dey act like say na you get Twitter."
+              ],
+              "career": [
+                "Your job basic pass meme wey no funny.",
+                "Your hustle petty pass WhatsApp status.",
+                "Your career na meme wey nobody tag."
+              ],
+              "future": [
+                "Your future petty pass Twitter fight.",
+                "You fit blow for throwing small shade.",
+                "Your destiny na meme wey start drama."
+              ],
+              "intelligence": [
+                "Your brain petty pass meme wey cause fight.",
+                "Your idea dey shade pass viral gist.",
+                "Your smart dey hide like meme wey nobody see."
+              ],
+              "lifestyle": [
+                "Your life petty pass meme wey trend small.",
+                "You dey live like say you dey shade everybody.",
+                "Your vibe na meme wey full of tea."
+              ]
+            }
+          },
+          "toxic": {
+            "categories": {
+              "looks": [
+                "Your face toxic pass meme wey need warning.",
+                "Your style fit poison TikTok algorithm.",
+                "Your selfie dey vex pass bad skit."
+              ],
+              "behavior": [
+                "Your energy toxic pass WhatsApp group fight.",
+                "You dey spread drama like meme wey nobody want.",
+                "Your vibe dey vex pass Twitter block."
+              ],
+              "career": [
+                "Your hustle toxic pass collab wey scatter.",
+                "Your job na meme wey nobody go share.",
+                "Your career na virus wey kill chance."
+              ],
+              "future": [
+                "Your future toxic pass meme wey cancel itself.",
+                "You dey go meme wey go crash hard.",
+                "Your path na hashtag wey dem mute."
+              ],
+              "intelligence": [
+                "Your brain na toxic meme wey nobody send.",
+                "Your idea na chaos, no retweet abeg.",
+                "Your smart na virus for meme game."
+              ],
+              "lifestyle": [
+                "Your life na toxic meme wey nobody like.",
+                "You dey live like say dem ban you everywhere.",
+                "Your vibe na meme wey dem report daily."
+              ]
+            }
+          },
+          "savage": {
+            "categories": {
+              "looks": [
+                "Your face na meme wey flop before e trend.",
+                "Your style wack pass TikTok ban.",
+                "Your selfie na savage roast on its own."
+              ],
+              "behavior": [
+                "You dey move like meme wey nobody ask for.",
+                "Your energy savage pass influencer beef.",
+                "You dey act like say na you get shade."
+              ],
+              "career": [
+                "Your hustle na meme wey no ever blow.",
+                "Your job dead pass savage roast.",
+                "Your career flop pass bad collab."
+              ],
+              "future": [
+                "Your future na savage meme wey no get like.",
+                "You dey go viral fail, no comeback.",
+                "Your destiny na roast wey trend for shade."
+              ],
+              "intelligence": [
+                "Your brain na savage meme wey nobody get.",
+                "Your idea dey roast pass your selfie.",
+                "Your smart na flop for meme game."
+              ],
+              "lifestyle": [
+                "Your life na savage meme wey nobody share.",
+                "You dey live like king of shade.",
+                "Your vibe na roast wey burn platform."
+              ]
+            }
+          },
+          "light": {
+            "categories": {
+              "looks": [
+                "Your face cute pass meme wey dey trend.",
+                "Your style cool pass light skit.",
+                "Your selfie get soft meme vibes."
+              ],
+              "behavior": [
+                "You dey vibe like meme wey everybody love.",
+                "Your energy light pass timeline glow.",
+                "You dey act like wholesome meme star."
+              ],
+              "career": [
+                "Your hustle na meme wey dey win lowkey.",
+                "Your job cool pass light vibe.",
+                "Your career na trend wey go stay."
+              ],
+              "future": [
+                "Your future na meme wey everybody like.",
+                "You dey go wholesome viral hit.",
+                "Your destiny na light hashtag."
+              ],
+              "intelligence": [
+                "Your brain na meme wey sharp lowkey.",
+                "Your idea light but always correct.",
+                "Your smart shine pass wholesome meme."
+              ],
+              "lifestyle": [
+                "Your life na meme wey full good vibe.",
+                "You dey live like TikTok star.",
+                "Your vibe na trend wey everybody love."
+              ]
+            }
+          }
+        }
+      },
+      "Yoruba": {
+        "tones": {
+          "funny": {
+            "categories": {
+              "looks": [
+                "Oju rẹ dabi meme tí wọ́n fi Paint ṣe.",
+                "Irún rẹ ń kígbe 'Mo jà pẹ̀lú barber'.",
+                "Selfie rẹ lè mú Instagram crash pẹ̀lú ẹ̀rín."
+              ],
+              "behavior": [
+                "O ń lọ bí ẹni tí ó fẹ́ ṣe viral video.",
+                "Vibe rẹ dàbí ẹni tí ó ń dáhùn pẹ̀lú emoji nìkan.",
+                "O ń ṣe bí thread Twitter tí kò sọ fún ẹnikẹ́ni."
+              ],
+              "career": [
+                "Hustle rẹ dàbí meme tí kò blow.",
+                "LinkedIn rẹ jẹ́ vibes àti zero connect.",
+                "Ipa iṣẹ́ rẹ yí ju ìtàn Nollywood lọ."
+              ],
+              "future": [
+                "Ọjọ́ ọla rẹ mọ́lẹ̀, ṣùgbọ́n ó ní meme láti ṣàlàyé.",
+                "O lè blow fún nkan tí o kò plán.",
+                "Kádàrá rẹ dàbí meme tí ó trend fún ọjọ́ kan."
+              ],
+              "intelligence": [
+                "Ọpọlọ rẹ ń ṣiṣẹ́, ṣùgbọ́n ó wà lórí 2G.",
+                "Ìmọ̀ rẹ dàbí meme tí wọ́n ti rí tẹ́lẹ̀.",
+                "IQ test rẹ lè di GIF ìdáhùn."
+              ],
+              "lifestyle": [
+                "Igbesi aye rẹ kígbe ju skit Instagram lọ.",
+                "O ń gbé bí gbogbo ọjọ́ jẹ́ meme challenge.",
+                "Vibe rẹ ní hashtag tí ó ń trend."
+              ]
+            }
+          },
+          "dark": {
+            "categories": {
+              "looks": [
+                "Oju rẹ lè mú app meme crash lẹ́ẹ̀kan.",
+                "Style rẹ dudu ju TikTok blackout lọ.",
+                "Selfie rẹ dàbí meme ẹ̀rù fún WhatsApp."
+              ],
+              "behavior": [
+                "O ń lurk online bí bot tí kò sùn.",
+                "Agbára rẹ dudu ju blocklist Twitter lọ.",
+                "O ń ṣe bí meme fún ìparun ayé."
+              ],
+              "career": [
+                "Iṣẹ́ rẹ kú ju meme tí kò sọ fún ẹnikẹ́ni lọ.",
+                "Hustle rẹ sin ju status tí wọ́n pa rẹ́ lọ.",
+                "Ipa iṣẹ́ rẹ jẹ́ meme tí kò dé timeline."
+              ],
+              "future": [
+                "Ọjọ́ ọla rẹ dudu ju meme tí kò ní like lọ.",
+                "O ń lọ sí viral fail, kò sí RT.",
+                "Kádàrá rẹ jẹ́ meme tí wọ́n ròyìn."
+              ],
+              "intelligence": [
+                "Ọpọlọ rẹ jẹ́ meme tí kò yé ẹnikẹ́ni.",
+                "Ìmọ̀ rẹ dì bí wẹ́ẹ̀bù tí ó crash.",
+                "Imọ́ rẹ lè tan meme, ṣùgbọ́n yóò flop."
+              ],
+              "lifestyle": [
+                "Igbesi aye rẹ jẹ́ meme tí ó dudu ju láti trend.",
+                "O ń gbé bí ẹni tí wọ́n fi sọ́tọ̀ lórí dark web.",
+                "Vibe rẹ jẹ́ meme tí wọ́n block."
+              ]
+            }
+          },
+          "petty": {
+            "categories": {
+              "looks": [
+                "Aṣọ rẹ ti gbó ju meme tí ó ti parí lọ.",
+                "Filter rẹ kò lágbára ju skit budget lọ.",
+                "Oju rẹ ń ṣe 'Mo kò gbìyànjú' vibes."
+              ],
+              "behavior": [
+                "O ń sọ̀rọ̀ bí ẹni tí ó ń ṣe shade ní side hustle.",
+                "Ìdáhùn rẹ petty ju comment section meme lọ.",
+                "O ń ṣe bí ẹni tí ó ní Twitter."
+              ],
+              "career": [
+                "Iṣẹ́ rẹ basic ju meme tí kò dun lọ.",
+                "Hustle rẹ petty ju status WhatsApp lọ.",
+                "Ipa iṣẹ́ rẹ jẹ́ meme tí kò sọ fún ẹnikẹ́ni."
+              ],
+              "future": [
+                "Ọjọ́ ọla rẹ petty ju ìjà Twitter lọ.",
+                "O lè blow fún sísọ shade kékeré.",
+                "Kádàrá rẹ jẹ́ meme tí ó dá ìdàrúdàpọ̀."
+              ],
+              "intelligence": [
+                "Ọpọlọ rẹ petty ju meme tí ó ń ja ìjà lọ.",
+                "Ìmọ̀ rẹ ń sọ shade ju gist viral lọ.",
+                "Imọ́ rẹ ń pamọ́ bí meme tí kò sọ fún ẹnikẹ́ni."
+              ],
+              "lifestyle": [
+                "Igbesi aye rẹ petty ju meme tí ó trend kékeré lọ.",
+                "O ń gbé bí ẹni tí ó ń shade gbogbo eniyan.",
+                "Vibe rẹ jẹ́ meme tí ó kún fún tea."
+              ]
+            }
+          },
+          "toxic": {
+            "categories": {
+              "looks": [
+                "Oju rẹ toxic ju meme tí ó ní warning lọ.",
+                "Style rẹ lè poison algorithm TikTok.",
+                "Selfie rẹ ń bíni nínú ju skit burúkú lọ."
+              ],
+              "behavior": [
+                "Agbára rẹ toxic ju ìjà group WhatsApp lọ.",
+                "O ń tan ìdàrúdàpọ̀ bí meme tí kò sọ fún ẹnikẹ́ni.",
+                "Vibe rẹ ń bíni nínú ju block Twitter lọ."
+              ],
+              "career": [
+                "Hustle rẹ toxic ju collab tí ó scatter lọ.",
+                "Iṣẹ́ rẹ jẹ́ meme tí kò sọ fún ẹnikẹ́ni.",
+                "Ipa iṣẹ́ rẹ jẹ́ virus tí ó pa ànfàní."
+              ],
+              "future": [
+                "Ọjọ́ ọla rẹ toxic ju meme tí ó cancel ara rẹ̀ lọ.",
+                "O ń lọ sí meme tí yóò crash gidigidi.",
+                "Ipa rẹ jẹ́ hashtag tí wọ́n mute."
+              ],
+              "intelligence": [
+                "Ọpọlọ rẹ jẹ́ meme toxic tí kò sọ fún ẹnikẹ́ni.",
+                "Ìmọ̀ rẹ jẹ́ ìdàrúdàpọ̀, kò sí retweet.",
+                "Imọ́ rẹ jẹ́ virus nínú meme game."
+              ],
+              "lifestyle": [
+                "Igbesi aye rẹ jẹ́ meme toxic tí kò sọ fún ẹnikẹ́ni.",
+                "O ń gbé bí ẹni tí wọ́n ban káàkiri.",
+                "Vibe rẹ jẹ́ meme tí wọ́n ròyìn lójoojúmọ́."
+              ]
+            }
+          },
+          "savage": {
+            "categories": {
+              "looks": [
+                "Oju rẹ jẹ́ meme tí ó flop kí ó tó trend.",
+                "Style rẹ wack ju ban TikTok lọ.",
+                "Selfie rẹ jẹ́ savage roast fún ara rẹ̀."
+              ],
+              "behavior": [
+                "O ń lọ bí meme tí kò sọ fún ẹnikẹ́ni.",
+                "Agbára rẹ savage ju ìjà influencer lọ.",
+                "O ń ṣe bí ẹni tí ó ní shade ayélujára."
+              ],
+              "career": [
+                "Hustle rẹ jẹ́ meme tí kò blow rárá.",
+                "Iṣẹ́ rẹ kú ju savage roast lọ.",
+                "Ipa iṣẹ́ rẹ flop ju collab burúkú lọ."
+              ],
+              "future": [
+                "Ọjọ́ ọla rẹ jẹ́ savage meme tí kò ní like.",
+                "O ń lọ sí viral fail, kò sí comeback.",
+                "Kádàrá rẹ jẹ́ roast tí ó trend fún shade."
+              ],
+              "intelligence": [
+                "Ọpọlọ rẹ jẹ́ savage meme tí kò yé ẹnikẹ́ni.",
+                "Ìmọ̀ rẹ ń roast ju selfie rẹ lọ.",
+                "Imọ́ rẹ jẹ́ flop nínú meme game."
+              ],
+              "lifestyle": [
+                "Igbesi aye rẹ jẹ́ savage meme tí kò sọ fún ẹnikẹ́ni.",
+                "O ń gbé bí ọba shade.",
+                "Vibe rẹ jẹ́ roast tí ó ń jó platform."
+              ]
+            }
+          },
+          "light": {
+            "categories": {
+              "looks": [
+                "Oju rẹ dára ju meme tí ó ń trend lọ.",
+                "Style rẹ cool ju skit light lọ.",
+                "Selfie rẹ ní meme vibes tí ó rọ̀."
+              ],
+              "behavior": [
+                "O ń vibe bí meme tí gbogbo eniyan fẹ́ràn.",
+                "Agbára rẹ light ju timeline glow lọ.",
+                "O ń ṣe bí irawọ meme tí ó dára."
+              ],
+              "career": [
+                "Hustle rẹ jẹ́ meme tí ó ń win lọ́wọ́lọ́wọ́.",
+                "Iṣẹ́ rẹ cool ju vibe light lọ.",
+                "Ipa iṣẹ́ rẹ jẹ́ trend tí yóò dúró."
+              ],
+              "future": [
+                "Ọjọ́ ọla rẹ jẹ́ meme tí gbogbo eniyan fẹ́ràn.",
+                "O ń lọ sí viral hit tí ó dára.",
+                "Kádàrá rẹ jẹ́ hashtag light."
+              ],
+              "intelligence": [
+                "Ọpọlọ rẹ jẹ́ meme tí ó mọ́ lọ́wọ́lọ́wọ́.",
+                "Ìmọ̀ rẹ light ṣùgbọ́n ó wà lórí àgbà.",
+                "Imọ́ rẹ ń tàn bí meme tí ó dára."
+              ],
+              "lifestyle": [
+                "Igbesi aye rẹ jẹ́ meme tí ó kún fún vibe rere.",
+                "O ń gbé bí irawọ TikTok.",
+                "Vibe rẹ jẹ́ trend tí gbogbo eniyan fẹ́ràn."
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+]
